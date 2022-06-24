@@ -1,0 +1,109 @@
+.header {
+    background-image: url(/img/captainmarvelheader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+}
+
+.nav-header img{
+    width: 12rem;   
+}
+
+.nav-header {
+    display: flex;
+    gap: 6rem;
+    padding: 3rem;
+}
+
+.lista-header {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.item-header a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.title-img {
+    width: 23rem;
+    margin-left: 13rem;
+    margin-top: 15rem;
+}
+
+.linha-inicial::after {
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 4px;
+    background: #fc3836;
+    margin: 10px auto;    
+}
+
+@media screen and (max-width: 786px) {
+    
+    .header {
+        background-image: url(/img/captainmarvelheader_Mobile.jpg);
+        height: 100vh;
+    }
+
+    .nav-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .title-img {
+        display: none;
+    }
+
+}
+
+.title-catalogo {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.title-catalogo::after {
+    content: '';
+    display: block;
+    width: 8rem;
+    height: 6px;
+    background: #fc3836;
+    margin: 15px auto;    
+}
+
+.div-itens img, .div-itens {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.div-itens span {
+    font-weight: bolder;
+}
+
+.nav-catalogo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 6rem;
+    column-gap: 6rem;
+}
+
+.button {
+    background:linear-gradient(#fe7467, #fc3836);
+    padding: 10px;
+    border-radius: 18px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: none;
+    width: 7rem;   
+}

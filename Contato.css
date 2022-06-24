@@ -1,0 +1,164 @@
+.header {
+    background-image: url(/img/contatoheader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+}
+
+.nav-header img{
+    width: 12rem;  
+}
+
+.nav-header {
+    display: flex;
+    gap: 6rem;
+    padding: 3rem;
+}
+
+.lista-header {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.item-header a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.title-img {
+    width: 28rem;
+    margin-left: 13rem;
+    margin-top: 12rem;
+}
+
+.linha-inicial::after {
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 4px;
+    background: #fc3836;
+    margin: 10px auto;    
+}
+
+@media screen and (max-width: 786px) {
+    
+    .header {
+        background-image: url(/img/contatoheader_mobile.jpg);
+        height: 100vh;
+    }
+
+    .nav-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .title-img {
+        display: none;
+    }
+
+}
+
+.title-contato {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.title-contato::after {
+    content: '';
+    display: block;
+    width: 8rem;
+    height: 6px;
+    background: #fc3836;
+    margin: 15px auto;    
+}
+
+.text-contato {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.text-contato p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center; 
+    width: 60%;
+}
+
+.form-contato {
+    display: grid;  
+    grid-template-columns: 33% 33%;
+    grid-template-areas: 
+    'nome text'
+    'email text'
+    'telefone text'
+    'button-contato button-contato';
+    justify-content: center;
+    gap: 15px;
+    padding: 3rem;
+}
+
+.form-contato input, textarea {
+    border-radius: 10px;
+    background-color: #fcfcfc;
+    border: 2px solid #cac6c6;
+    outline-style: none;
+    
+}
+
+.form-contato input::placeholder, textarea::placeholder {
+    padding-left: 2rem;
+    padding-top: 10px;
+}
+
+.nome {
+    grid-area: nome;
+}
+
+.email {
+    grid-area: email;
+}
+
+.telefone {
+    grid-area: telefone;
+}
+
+.text {
+    grid-area: text;
+    resize: none;
+}
+
+.button-contato {
+    grid-area: button-contato;
+    background:linear-gradient(#fe7467, #fc3836);
+    padding: 10px;
+    border-radius: 18px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: none;     
+}
+
+@media screen and (max-width: 786px) {
+    
+    .text-contato p {
+        width: 100%;
+    }
+
+    .form-contato {
+        height: 25rem;
+        grid-template-areas: 
+        'nome nome'
+        'email email'
+        'telefone telefone'
+        'text text'
+        'button-contato button-contato';
+    }
+
+}

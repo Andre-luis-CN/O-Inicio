@@ -1,0 +1,171 @@
+.header {
+    background-image: url(/img/logo_spiderman.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+}
+
+.nav-header img{
+    width: 12rem;   
+}
+
+.nav-header {
+    display: flex;
+    gap: 6rem;
+    padding: 3rem;
+}
+
+.lista-header {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.item-header a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.title-img {
+    width: 16rem;
+    margin-left: 15rem;
+    margin-top: 8rem;
+}
+
+.linha-inicial::after {
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 4px;
+    background: #fc3836;
+    margin: 10px auto;    
+}
+
+@media screen and (max-width: 786px) {
+    
+    .header {
+        background-image: url(/img/spidermanheader_mobile.jpg);
+        height: 100vh;
+    }
+
+    .nav-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .title-img {
+        width: 12rem;
+        margin-left: 5rem;
+        margin-top: 10rem;
+    }
+
+}
+
+.quem-somos {
+    background-image: url(/img/thor_header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.title-quem-somos {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 3rem;
+}
+
+.title-quem-somos::after {
+    content: '';
+    display: block;
+    width: 8rem;
+    height: 6px;
+    background: #FFFFFF;
+    margin: 15px auto;    
+}
+
+.text-quem-somos {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5rem;    
+    
+}
+
+.text-quem-somos p {
+    width: 45%;
+    font-size: 1.3rem;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 786px) {
+    
+    .quem-somos {
+        background:linear-gradient(#fe7467, #fc3836);        
+    }
+
+    .text-quem-somos {
+        justify-content: center;
+        padding: 2rem;
+    }
+
+    .text-quem-somos p {
+        width: 100%;
+    }
+
+}
+
+.title-catalogo {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 3rem;
+}
+
+.title-catalogo::after {
+    content: '';
+    display: block;
+    width: 8rem;
+    height: 6px;
+    background: #fc3836;
+    margin: 15px auto;    
+}
+
+.global-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.img-info, .text-info {
+    width: 45%;
+    font-size: 1.3rem;
+}
+
+.button {
+    background:linear-gradient(#fe7467, #fc3836);
+    padding: 18px;
+    border-radius: 18px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: none;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 786px) {
+
+    .global-info {
+        flex-direction: column-reverse;
+        row-gap: 4rem;
+    }
+    
+    .text-info, .img-info {
+        width: 100%;
+        text-align: center;
+    }
+
+}
